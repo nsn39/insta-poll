@@ -1,0 +1,22 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+
+<h1>{{ question.question_text }}</h1>
+
+<ul>
+{% for choice in question.choice_set.all %}
+    <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
+{% endfor %}
+</ul>
+<div class="navbar">
+    <li><a href="{% url 'polls:detail' question.id %}">Vote again? </a></li>
+    <li><a href="{% url 'polls:index' %}">Go back to the homepage...</a></li>
+    <li><a href="{% url 'polls:about_me' %}">About Me</a></li>
+
+
+</div>
+
+<div id="footer">
+    <p>Copyright &copy; Nishan Poudel 2019</p>
+</div>

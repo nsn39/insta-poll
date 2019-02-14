@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<body>
+  <h2>Well, you can use the polling app only if you are logged in...</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Login</button>
+  </form>
+  <small>Dont have an account? Then <a href="{% url 'polls:register'%}">Sign Up</a>right now...</small>
+</body>
+{% endblock %}

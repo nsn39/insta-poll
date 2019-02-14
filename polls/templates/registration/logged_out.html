@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+    <head>
+        <meta charset="utf-8">
+        <title>Polling Account Logged Out</title>
+    </head>
+
+    <body>
+        <h2>Well, It appears you have been logged out...</h2>
+        <a href="{% url 'login' %}">Login to My Polling Account..</a>
+    </body>
+
+</html>

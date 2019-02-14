@@ -1,0 +1,47 @@
+li {
+    margin-right: 40px;
+
+}
+li a{
+    color : black;
+    font-size = 18px;
+    text-decoration: none;
+    font-family: Comic Sans MS;
+
+}
+
+ul {
+    list-style: none;
+    float: left;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+body {
+    background: purple url("images/poudel.jpeg") no-repeat;
+}
+detail {
+    background: violet url("images/poudel.jpeg") no-repeat;
+    color: yellow;
+}
+
+h1 {
+    font-family: Caviar Dreams, Helvetica, Georgia;
+}
+
+a {
+   font-family: Comic Sans MS;
+   color: black;
+   text-decoration: none;
+
+   padding : 10px;
+}
+
+
+
+#footer {
+    font-family: Fontin;
+    background-color: grey;
+    color: white;
+    clear: both;
+    text-align: right;
+}
