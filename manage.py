@@ -2,7 +2,7 @@
 import os
 import sys
 #Just added this comment
-#This is for the comment branch
+#This is really effin new times.
 if __name__ == '__main__':
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mysite.settings')
     try:
